@@ -11,8 +11,18 @@ html{
 } 
 
 body{
+    
     font-size: 16px; /*1 rem= 10px*/
     font-family:'Times New Roman', Times, serif;
+    background-image: url(../image/fondo1.jpg);
+    background-size: cover;
+    
+
+}
+
+.formulario{
+   background-color: var(--blanco);
+    background-size: cover;
 }
 
 .titulo {
@@ -23,4 +33,13 @@ body{
 .titulo span{
     font-size: 2rem;
 
+}
+
+.btnConfirmar{
+    background-color: #001D68;
+    color: var(--blanco);
+    border: none;
+    border-radius: 10px;
+    min-height:30px; 
+    min-width: 120px;
 }
