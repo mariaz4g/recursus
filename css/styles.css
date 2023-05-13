@@ -16,10 +16,18 @@ body{
     font-family:'Times New Roman', Times, serif;
     background-image: url(../image/fondo1.jpg);
     background-size: cover;
-    
+    background-repeat: no-repeat;    
 
 }
+.fondop1{
+ 
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    margin-right: 0;
+    margin-left: 0;
 
+    
+}
 .formulario{
    background-color: var(--blanco);
     background-size: cover;
@@ -27,12 +35,8 @@ body{
 
 .titulo {
     text-align: center;
-    font-size: 3.8rem;
-}
-
-.titulo span{
     font-size: 2rem;
-
+    background-color: var(--blanco);
 }
 
 .btnConfirmar{
@@ -42,4 +46,24 @@ body{
     border-radius: 10px;
     min-height:30px; 
     min-width: 120px;
+}
+
+.contenedor{
+    width: 20rem;
+    margin: 0 auto;
+}
+
+.nav-bg{
+    background-color: var(--blanco);
+}
+
+.navegacion-principal{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacion-principal a{
+    color: var(--gris);
+    text-decoration: none;
 }
