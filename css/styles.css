@@ -25,14 +25,15 @@ body{
     background-size: cover;
     border: none;
     border-radius: 10px;
-    min-height: 380px; 
-    min-width: 230px;
+    min-height: 140px; 
+    min-width: 480px;
     font-weight: 700;
-    padding-top: 65px;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-bottom: 65px;
-
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 60px;
+    font-size: 1.5rem;
+    
 }
 
 .titulo {
@@ -53,6 +54,7 @@ body{
     border-radius: 10px;
     min-height:30px; 
     min-width: 60px;
+    font-size: 22px;
 }
 
 .btnRecursos{
@@ -108,10 +110,34 @@ color: var(--blanco)
     height: 780px;
     padding-top: 60px;
     padding-bottom: 320px;
-    padding-right: 250px;
-    padding-left: 250px;
+    padding-right: 300px;
+    padding-left:300px;
 
 }
 input, textarea, select, button{
-  width: 434px;
+  width: 545px;
+}
+
+.contenedorheader{
+    display: flex;
+}
+
+.contenedorlogo{
+    height: 145px;
+
+    
+}
+.contenedortitulo{
+    width: 1056px;
+    text-align:left;
+    padding-top: 50px;
+    padding-left: 10px;
+    font-size: 2rem;
+}
+.contenedorlogin{
+   width: 594x;
+   height: 380px;
+}
+.centerlogin{
+    text-align: center;
 }
