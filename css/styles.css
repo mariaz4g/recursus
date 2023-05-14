@@ -8,8 +8,11 @@
 
 html{
     font: 62.5%;
+    box-sizing: border-box;
 } 
-
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 body{
     
     font-size: 16px; /*1 rem= 10px*/
@@ -20,6 +23,16 @@ body{
 .formulario{
    background-color: var(--blanco);
     background-size: cover;
+    border: none;
+    border-radius: 10px;
+    min-height: 380px; 
+    min-width: 230px;
+    font-weight: 700;
+    padding-top: 65px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 65px;
+
 }
 
 .titulo {
@@ -28,13 +41,18 @@ body{
     background-color: var(--blanco);
 }
 
+.subtitulo{
+    text-align: center;
+    font-size: 3.8rem;
+}
+
 .btnConfirmar{
     background-color: #001D68;
     color: var(--blanco);
     border: none;
     border-radius: 10px;
     min-height:30px; 
-    min-width: 120px;
+    min-width: 60px;
 }
 
 .btnRecursos{
@@ -43,7 +61,7 @@ body{
     border: none;
     border-radius: 10px;
     min-height:30px; 
-    min-width: 120px;
+    min-width: 10px;
     font-weight: 700;
 }
 
@@ -51,7 +69,6 @@ body{
     max-width: 20rem;
     margin: 0 auto;
 }
-
 .nav-bg{
     background-color: var(--blanco);
 }
@@ -65,6 +82,7 @@ body{
     .navegacion-principal{
         flex-direction: row;
         justify-content: space-between;
+        
 
     }
 }
@@ -87,7 +105,13 @@ color: var(--blanco)
     background-image: url(../image/fondo1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 450px;
-    padding: 20px;
+    height: 780px;
+    padding-top: 60px;
+    padding-bottom: 320px;
+    padding-right: 250px;
+    padding-left: 250px;
 
+}
+input, textarea, select, button{
+  width: 434px;
 }
