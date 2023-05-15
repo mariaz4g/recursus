@@ -20,33 +20,35 @@ body{
 
 }
 
-.formulario{
-   background-color: var(--blanco);
-    background-size: cover;
-    border: none;
-    border-radius: 10px;
-    min-height: 140px; 
-    min-width: 480px;
-    font-weight: 700;
-    padding-top: 40px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 60px;
-    font-size: 1.5rem;
-    
-}
-
-.titulo {
-    text-align: center;
-    font-size: 2rem;
-    background-color: var(--blanco);
-}
-
-.subtitulo{
-    text-align: center;
+h1{
     font-size: 3.8rem;
 }
 
+h2{
+    font-size: 2.8rem;
+}
+
+h3{
+    font-size: 1.8rem;
+
+}
+
+.formulario{
+    background-color: var(--blanco);
+     background-size: cover;
+     border: none;
+     border-radius: 10px;
+     min-height: 140px; 
+     min-width: 480px;
+     font-weight: 700;
+     padding-top: 40px;
+     padding-left: 100px;
+     padding-right: 100px;
+     padding-bottom: 60px;
+     font-size: 1.5rem;
+     
+ }
+ 
 .btnConfirmar{
     background-color: #001D68;
     color: var(--blanco);
@@ -83,7 +85,7 @@ body{
 @media (min-width: 768px) {
     .navegacion-principal{
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         
 
     }
@@ -140,4 +142,10 @@ input, textarea, select, button{
 }
 .centerlogin{
     text-align: center;
+}
+.contenedornav{
+    width: 1056px;
+    text-align:center;
+   padding-top: 40px;
+    font-size: 2rem;
 }
