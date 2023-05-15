@@ -10,10 +10,11 @@
     <title>Apartado de Recursos</title>
     <link rel="preload" href="css/styles.css" as="style">
     <link href="css/styles.css" rel="stylesheet">
-    <script>src="index.js"</script>
 </head>
 
 <body>
+    <script>src="index.js"</script>
+
     <header>
         <div class="contenedorheader">
             <div class="contenedorlogo">
@@ -34,11 +35,14 @@
 
 
                      <p>Matrícula:</p>
-                     <input type="text" name="User" id="1">
+                     <input id = 1 type="text">
                      <p>Contraseña:</p>
-                     <input type="password" name="Pass" id="2">
-                     <p></p>    
-                     <button type="submit" class= "btnConfirmar" onclick="inputCheck()">Confirmar</button>
+                     <input id = 2 type="password">
+                     <p></p>   
+                     <div>
+                        <div id= 3></div>
+                     </div> 
+                     <input type="submit" value="Confirmar" class= "btnConfirmar" onclick="inputCheck()">
                     </fieldset>
                 </form>
         </div>
