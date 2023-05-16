@@ -54,12 +54,21 @@ h3{
     width: 100%;
  }
  
+ 
+.centerlogin{
+    text-align: center;
+}
+
 .btnConfirmar{
     background-color: #001D68;
     color: var(--blanco);
     border: none;
     border-radius: 10px;
     font-size: 20px;
+}
+
+.enviar .btnConfirmar{
+    width: 100%;
 }
 
 @media (min-width: 480px) {
@@ -103,7 +112,7 @@ background-color: var(--gris);
 color: var(--blanco)
 }
 
-.hero{ /*Ejemplo para index*/
+.hero{ /*index*/
     background-image: url(../image/fondo1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -115,17 +124,13 @@ color: var(--blanco)
 
 }
 
+/*Contenedores de home*/
 
 .contenedorheader{
     display: flex;
 }
 
-
-.contenedorlogo{
-    height: 145px;
-    
-}
-.contenedortitulo{
+.contenedorheader .titulo{
     width: 1056px;
     text-align:left;
     padding-top: 50px;
@@ -134,10 +139,6 @@ color: var(--blanco)
     font-size: 2rem;
 }
 
-
-.centerlogin{
-    text-align: center;
-}
 .contenedornav{
     width: 1056px;
     text-align:center;
@@ -145,11 +146,11 @@ color: var(--blanco)
     font-size: 2rem;
 }
 
+
 .contenedorbarrahome{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
-    
+      
 }
 
 .contenedorbarrahome .buscar {
@@ -165,12 +166,18 @@ color: var(--blanco)
 
 }
 
-.recursoshome {
+/*Contenedor recursos en home*/
+@media (min-width: 768px) {
+    
+.recursos{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+}
+}
+.contenedorrecursos{
+height: 1366px;
 }
 
-.enviar .btnConfirmar{
-    width: 100%;
-}
