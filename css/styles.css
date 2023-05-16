@@ -151,6 +151,8 @@ color: var(--blanco)
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: gainsboro;
+    height: 60px;
+    align-items: center;
       
 }
 
@@ -174,12 +176,15 @@ color: var(--blanco)
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         align-items: center;
+        column-gap: 20px;
+        padding-left: 2rem;
     }
     }
 
 .contenedorrecursos{
-    height: 590px;
+    height: 460px;
     background-color: gainsboro;
+    
     }   
 
 .recursos .imgrecurso1{
@@ -194,6 +199,7 @@ color: var(--blanco)
     width: 341px;
     background-image: url(../image/recurso2.jpg);
     background-size: cover;
+    justify-content: center;
    }
 
 .recursos .imgrecurso3{
@@ -201,14 +207,13 @@ color: var(--blanco)
     width: 341px;
     background-image: url(../image/recurso3.jpg);
     background-size: cover;
+    justify-content: center;
    }
 
-.recursos .btnRecursos{
-    background-color: var(--rojo);
-    color: var(--blanco);
-    border: none;
-    border-radius: 10px;
-    font-size: 20px;
+   .recursos .centerimagen{
+    display: flex;
+    justify-content:center;
+    align-items: center;
 }
 
 .recursos .titulo {
@@ -216,34 +221,33 @@ color: var(--blanco)
     width: 341px;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 2rem;
-    padding-top: 10px;
-    padding-right: 30px;
-    padding-bottom: 10px;
-    padding-left: 30px;
+ 
+}
+.recursos .centertitulo{
+    display: flex;
+    justify-content:center;
+    align-items: center;
 }
 
-.recursos .boton1{
+.recursos .boton{
     background-color: var(--rojo);
     color: var(--blanco);
     border: none;
     border-radius: 10px;
     font-size: 1.3rem;
+    width: 150px;
+    height: 45px;
+    border: none;
+    border-radius: 40px;
 }
 
-.recursos .boton2{
-    background-color: var(--rojo);
-    color: var(--blanco);
-    border: none;
-    border-radius: 10px;
-    font-size: 1.3rem;
+.recursos .centerboton{
+    display: flex;
+    justify-content:center;
+    align-items: center;
 }
 
-.recursos .boton3{
-    background-color: var(--rojo);
-    color: var(--blanco);
-    border: none;
-    border-radius: 10px;
-    font-size: 1.3rem;
-}
+
 
