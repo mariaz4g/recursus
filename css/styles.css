@@ -48,6 +48,11 @@ h3{
      font-size: 1.5rem;
      
  }
+
+ .formulario input[type="text"],
+ .formulario input[type="password"]{
+    width: 100%;
+ }
  
 .btnConfirmar{
     background-color: #001D68;
@@ -68,15 +73,6 @@ h3{
         width: 440px;
     }
     
-}
-.btnRecursos{
-    background-color: var(--rojo);
-    color: var(--blanco);
-    border: none;
-    border-radius: 10px;
-    min-height:30px; 
-    min-width: 10px;
-    font-weight: 700;
 }
 
 .navegacion-principal{
@@ -119,12 +115,6 @@ color: var(--blanco)
 
 }
 
-@media (min-width: 1140px) {
-    input, textarea, select, button{
-        width: 440px;
-      }  
-}
-
 
 .contenedorheader{
     display: flex;
@@ -156,11 +146,31 @@ color: var(--blanco)
 }
 
 .contenedorbarrahome{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
     
 }
 
-.servicios{
+.contenedorbarrahome .buscar {
+    display: flex;
+    justify-content: left;
+    padding-left: 2rem;
+}
+
+.contenedorbarrahome .filtrar{
+    display: flex;
+    justify-content: right;
+    padding-right: 2rem;
+
+}
+
+.recursoshome {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.enviar .btnConfirmar{
+    width: 100%;
 }
