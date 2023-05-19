@@ -10,7 +10,7 @@
     <title>Apartado de Recursos</title>
     <link rel="preload" href="css/styles.css" as="style">
     <link href="css/styles.css" rel="stylesheet">
-
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -35,18 +35,20 @@
 
                     <div>
                         <p>Matrícula:</p>
-                        <input type = "text" placeholder="229395">
+                        <input id = 1 type = "text" placeholder="229395">
                         <p></p> 
                     </div>
 
                      <div>
                         <p>Contraseña:</p>
-                        <input type = "password" placeholder="********">
+                        <input id = 2 type = "password" placeholder="********">
                     <p></p> 
                      </div>
-  
+                    <p id = 3></p>
+
+
                      <div class="enviar">
-                        <input type="button" class= "btnConfirmar" value="Confirmar" onclick="location='home.html'"></input> 
+                        <input type="button" class= "btnConfirmar" value="Confirmar" onclick="inputCheck()"></input>
                      </div>
 
                     </fieldset>
