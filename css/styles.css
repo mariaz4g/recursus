@@ -254,5 +254,33 @@ color: var(--blanco)
     align-items: center;
 }
 
+/*Contenedor recurso 1*/
+
+@media (min-width: 768px) {
+    
+    .recursos1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        column-gap: 20px;
+        padding-left: 2rem;
+        padding-top: 2rem;
+        padding-right: 2rem;
+    }
+    }
+
+
+.recursos1 .imgrecursos1_1{
+    height: 325px;
+    width: 334px;
+    background-image: url(../image/recurso1_1.png);
+    background-size: cover;
+    }
+
+    .recursos1 .centerimagen{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
 
 
