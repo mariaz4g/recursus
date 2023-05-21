@@ -42,7 +42,22 @@ function increaseCounter()
     setCookie('counterCookie', counter);
     return location='home.html';
 }
+var boolean = false;
 
+function showNotification() {
+    var notificationBox = document.getElementById("notification");
+    if (boolean || getCookie("counterCookie") == 3)
+        notificationBox.style.display = "none";
+    else
+    {
+        notificationBox.innerHTML = "Recurso 1 disponible";
+        notificationBox.style.display = "block";
+    }
+
+
+    console.log(boolean);
+    boolean = !boolean;
+}
 
 
 const storedCounter = getCookie('counterCookie');
