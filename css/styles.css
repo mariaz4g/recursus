@@ -372,10 +372,16 @@ color: var(--blanco)
         display: grid;
         grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(2,auto);
-        column-gap: 2rem;
-        background-color: gainsboro;
+        column-gap: 5px;
+        background-color: rgb(158, 158, 158);
         padding-top: 1rem;
+        padding-bottom: 1rem;
     }
+
+     .gridhorarios label{
+            background-color: gainsboro;
+            padding-bottom: 1rem;
+        }
     }
 
 @media (min-width: 1140px) {
@@ -383,6 +389,7 @@ color: var(--blanco)
     .cont-estudiantes{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        column-gap: 5px;
         background-color: gainsboro;
         text-align: center;
     }
@@ -393,19 +400,32 @@ color: var(--blanco)
         .cont-horarios{
             display: grid;
             grid-template-columns: repeat(5, 1fr);
+            column-gap: 5px;
             grid-template-rows: repeat(5, 1fr);
-            background-color: gainsboro;
+            row-gap: 5px;
+            background-color: rgb(158, 158, 158);
             text-align: center;
             column-gap: 5px;
+            padding-top: 5px;
+        }
+
+        .cont-horarios label{
+            background-color: gainsboro;
+        }
+
+        .cont-horarios p{
+            background-color: gainsboro;
+            margin: 0;
         }
 }  
 
-.h_rentado{
-    background-color: rgba(11, 208, 11, 0.346);
+
+#h_rentado{
+    background-color: rgb(91, 242, 91);
 }
 
-.h_regresar{
-    background-color: rgba(255, 0, 0, 0.357);
+#h_regresar{
+    background-color: rgb(255, 110, 110);
 }
 
 
