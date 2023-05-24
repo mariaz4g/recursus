@@ -374,13 +374,18 @@ color: var(--blanco)
         grid-template-rows: repeat(2,auto);
         column-gap: 5px;
         background-color: rgb(158, 158, 158);
-        padding-top: 1rem;
+        padding-top: 5px;
         padding-bottom: 1rem;
     }
 
      .gridhorarios label{
             background-color: gainsboro;
             padding-bottom: 1rem;
+        }
+
+        .gridhorarios p{
+            background-color: gainsboro;
+            margin: 0;
         }
     }
 
@@ -390,8 +395,15 @@ color: var(--blanco)
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         column-gap: 5px;
-        background-color: gainsboro;
+        row-gap: 5px;
+        background-color: rgb(158, 158, 158);
         text-align: center;
+     
+    }
+
+    .gridhorarios label{
+        background-color: gainsboro;
+        margin: 0;
     }
     }
 
