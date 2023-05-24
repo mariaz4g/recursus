@@ -20,12 +20,26 @@
     
                 <div class="contenedornav">
                     <nav class="navegacion-principal">
-                        <a href="home.html">Inicio</a>
-                        <a href="recurso1.html">Recursos</a>
-                        <a href="#">Aulas</a>
-                        <a href="#">Perfil</a>
-                        <button onclick="showNotification()"><img src="image/bell.png" alt="Notification Bell" style="width: 50px; height: 50px;"></button>
-                        <div id="notification"></div>
+                    <a href="home.html">Inicio</a>
+                    <a href="recurso1.html">Recursos</a>
+                    <a href="#">Aulas</a>
+                    <a href="#">Perfil</a>
+                    <div class="notificaciones">
+                        <button></button>
+                        <div class="notifcont">
+                            <label style="font-size: 1.5rem">Notificaciones</label>
+
+                            <div id="notificacion1">
+                            <a> Uno de los artículos vistos recientemente se encuentra disponible: Microfono</a>
+                            <label class="vernotif" onclick="location.href='recurso1.html'">ir al apartado</label>
+                            </div>
+
+                            <div id="notificacion2">
+                            <a>Uno de los artículos apartados recientemente se encuentra disponible: Cable HDMI</a>
+                            <label class="vernotif" onclick="location.href='recurso1.html'">ir al apartado</label>
+                            </div>
+                        </div>
+                    </div>
                     </nav>
                 </div>
         </div>
@@ -81,7 +95,7 @@
                             <label>Cantidad: </label>
                             <input id = 1 type = number value = 1>
                             <p></p>
-                            <button onclick="increaseCounter()">Apartar</button>
+                            <button onclick="increaseCounter('counterCookie', 1, 3)">Apartar</button>
 
                             <p>Inventario: 3</p>
 
@@ -109,9 +123,9 @@
                             <label>Tipo de conector:</label><label> HDMI</label>
                             <p></p>
                             <label>Cantidad: </label>
-                            <input id = 1 type = number value = 1>
+                            <input id = 2 type = number value = 1>
                             <p></p>
-                            <button onclick="increaseCounter()">Apartar</button>
+                            <button onclick="increaseCounter('counterCookie2', 2 , 10)">Apartar</button>
 
                             <p>Inventario: 10</p>
 

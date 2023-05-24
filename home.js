@@ -2,7 +2,6 @@
 function setCookie(name, value) {
   document.cookie = `${name}=${encodeURIComponent(value)};path=/`;
 }
-
 // Get cookie
 function getCookie(name)
 {
@@ -22,11 +21,11 @@ function getCookie(name)
 
 var counter = 0;
 
-function increaseCounter()
+function increaseCounter(cookieName, id, inventario)
 {
-    var quantity = document.getElementById("1").value;
-    var counterCookie = parseInt(getCookie("counterCookie"));
-    var inventario = 3;
+    var quantity = document.getElementById(id).value;
+    var counterCookie = parseInt(getCookie(cookieName));
+
     if(isNaN(counterCookie))
         counter = 0;
     else
@@ -39,27 +38,35 @@ function increaseCounter()
     if (counter < 0)
         counter = 0;
     console.log(counter);
-    setCookie('counterCookie', counter);
+    setCookie(cookieName, counter);
     return location='home.html';
 }
 var boolean = false;
 
 function showNotification() {
     var notificationBox = document.getElementById("notification");
-    if (boolean || getCookie("counterCookie") == 3)
+    if (boolean && storedCounter == 3)
         notificationBox.style.display = "none";
     else
     {
         notificationBox.innerHTML = "Recurso 1 disponible";
         notificationBox.style.display = "block";
     }
-
-
     console.log(boolean);
     boolean = !boolean;
 }
+function toggleDisplay(cookieName, id, inventario) {
+    var displayText = document.getElementById(id);
+
+    if (displayText.style.display === "none" && getCookie('counterCookie') == 3)
+    {
+      displayText.style.display = "block";
+    } else
+    {
+      displayText.style.display = "none";
+    }
+  }
 
 
 const storedCounter = getCookie('counterCookie');
 console.log(storedCounter);
-
