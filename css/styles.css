@@ -450,14 +450,16 @@ color: var(--blanco)
     position: relative;
     width: 100%;
     text-align: right;
+    padding-right: 10px;
 }
 
 .ayuda button{
     border: none;
-    height: 25px;
-    width: 25px;
+    height: 40px;
+    width: 40px;
     background-image: url(../image/help.png);
     background-size: cover;
+    
     
 }
 
