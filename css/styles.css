@@ -93,6 +93,7 @@ h3{
     .navegacion-principal{
         flex-direction: row;
         justify-content: space-evenly;
+        align-items: center;
         
 
     }
@@ -312,3 +313,55 @@ color: var(--blanco)
         align-items: center;
     }
 
+.notificaciones{
+    display: inline-block;
+    position: relative;
+}
+
+.notificaciones button{
+    border: none;
+    height: 25px;
+    width: 25px;
+    background-image: url(../image/bell.png);
+    background-size: cover;
+    
+}
+
+.notifcont{
+    display: none;
+    position:absolute;
+    top: 2.3rem;
+    right: -2rem;
+    width: 302px;
+    overflow: auto;
+    background-color: ghostwhite;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: left;
+    padding-left: 5px;
+}
+
+.notificaciones:hover .notifcont{
+    display: block;
+}
+
+.notifcont a{
+    display: block;
+    color: var(--negro);
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.notifcont a:hover {
+    color:var(--negro);
+    background-color: rgb(240, 240, 240);
+}
+
+.vernotif{
+    display: inherit;
+    font-size: 1rem;
+    color:var(--azul);
+    text-align: right;
+    padding-right: 5px;
+}
