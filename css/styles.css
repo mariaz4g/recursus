@@ -187,7 +187,7 @@ color: var(--blanco)
     }
 
 .contenedorrecursos{
-    height: 460px;
+    height: 100%;
     background-color: gainsboro;
     
     }   
@@ -278,6 +278,35 @@ color: var(--blanco)
     }
 
     .recursos1 .centerimagen{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+
+/*Contenedor recurso 1*/
+
+@media (min-width: 768px) {
+    
+    .recursos1_2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        column-gap: 20px;
+        padding-left: 2rem;
+        padding-top: 2rem;
+        padding-right: 2rem;
+    }
+    }
+
+
+.recursos1_2 .imgrecursos1_2{
+    height: 325px;
+    width: 334px;
+    background-image: url(../image/recurso1_2.jpg);
+    background-size: cover;
+    }
+
+    .recursos1_2 .centerimagen{
         display: flex;
         justify-content:center;
         align-items: center;
