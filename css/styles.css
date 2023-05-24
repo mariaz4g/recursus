@@ -175,7 +175,7 @@ color: var(--blanco)
 }
 
 /*Contenedor recursos en home*/
-@media (min-width: 768px) {
+@media (min-width: 1140px) {
     
     .recursos{
         display: grid;
@@ -257,7 +257,7 @@ color: var(--blanco)
 
 /*Contenedor recurso 1*/
 
-@media (min-width: 768px) {
+@media (min-width: 1140px) {
     
     .recursos1{
         display: grid;
@@ -286,7 +286,7 @@ color: var(--blanco)
 
 /*Contenedor recurso 1_2*/
 
-@media (min-width: 768px) {
+@media (min-width: 1140px) {
     
     .recursos1_2{
         display: grid;
@@ -365,3 +365,47 @@ color: var(--blanco)
     text-align: right;
     padding-right: 5px;
 }
+
+@media (min-width: 1140px) {
+    
+    .gridhorarios{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2,auto);
+        column-gap: 2rem;
+        background-color: gainsboro;
+        padding-top: 1rem;
+    }
+    }
+
+@media (min-width: 1140px) {
+    
+    .cont-estudiantes{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        background-color: gainsboro;
+        text-align: center;
+    }
+    }
+
+@media (min-width: 1140px) {
+    
+        .cont-horarios{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            background-color: gainsboro;
+            text-align: center;
+            column-gap: 5px;
+        }
+}  
+
+.h_rentado{
+    background-color: rgba(11, 208, 11, 0.346);
+}
+
+.h_regresar{
+    background-color: rgba(255, 0, 0, 0.357);
+}
+
+
