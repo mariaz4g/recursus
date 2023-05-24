@@ -19,6 +19,9 @@ body{
     font-family:'Times New Roman', Times, serif;
 
 }
+main{
+    background-color: gainsboro;
+}
 
 h1{
     font-size: 3.8rem;
@@ -154,6 +157,7 @@ color: var(--blanco)
     background-color: gainsboro;
     height: 60px;
     align-items: center;
+    margin-bottom: 10px;
       
 }
 
@@ -440,4 +444,53 @@ color: var(--blanco)
     background-color: rgb(255, 110, 110);
 }
 
+/*Contenedor ayuda*/
+.ayuda{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    text-align: right;
+}
+
+.ayuda button{
+    border: none;
+    height: 25px;
+    width: 25px;
+    background-image: url(../image/help.png);
+    background-size: cover;
+}
+
+.ayudacont{
+    display: none;
+    position:absolute;
+    bottom: 2rem;
+    right: 2rem;
+    width: 302px;
+    overflow: auto;
+    background-color: rgba(26, 26, 130, 0.837);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: left;
+    padding-left: 5px;
+}
+
+.ayuda:hover .ayudacont{
+    display: block;
+}
+
+.ayudacont p{
+    display: block;
+    color: var(--blanco);
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: left;
+}
+.ayudacont label{
+    display: block;
+    color: var(--blanco);
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: left;
+}
 
